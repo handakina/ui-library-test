@@ -1,0 +1,37 @@
+@import "./mixins";
+@import "./variables";
+
+.twk-button {
+  @include btn-basic;
+  .twk-text:hover {
+    color: map-get($color, "white");
+  }
+}
+
+.twk-button-2 {
+  @include btn-basic;
+  background-color: map-get($color, "yello");
+  &:hover {
+    background-color: map-get($color, "white");
+  }
+}
+
+.twk-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  @include flex-basic;
+  text-align: center;
+  color: map-get($color, "white-1");
+}
+
+@each $key, $colorValue in $color {
+  .twk-button-color-#{$key} {
+    background-color: $colorValue;
+  }
+}
+
+.img {
+  @include flex-basic;
+}

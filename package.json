@@ -28,6 +28,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-test-renderer": "^18.2.0",
+    "sass": "^1.55.0",
     "ts-jest": "^29.0.2",
     "typescript": "^4.8.3"
   },
@@ -39,6 +40,7 @@
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "test": "jest --verbose"
+    "test": "jest --verbose",
+    "sass": "sass --no-source-map --update --style=expanded src/component/Button:src/component/Button"
   }
 }

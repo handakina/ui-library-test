@@ -1,0 +1,67 @@
+.twk-button {
+  padding-left: 0.4rem;
+  padding-right: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ba24db;
+  border-radius: 1.6rem;
+  border-color: #47b877;
+  gap: 0.2rem;
+}
+.twk-button .twk-text:hover {
+  color: #fcfcfc;
+}
+
+.twk-button-2 {
+  padding-left: 0.4rem;
+  padding-right: 1.6rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: #ba24db;
+  border-radius: 1.6rem;
+  border-color: #47b877;
+  gap: 0.2rem;
+  background-color: #e5b31a;
+}
+.twk-button-2:hover {
+  background-color: #fcfcfc;
+}
+
+.twk-text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+
+.twk-button-color-green {
+  background-color: #47b877;
+}
+
+.twk-button-color-blue {
+  background-color: #ba24db;
+}
+
+.twk-button-color-yello {
+  background-color: #e5b31a;
+}
+
+.twk-button-color-black {
+  background-color: #110d02;
+}
+
+.twk-button-color-white {
+  background-color: #fcfcfc;
+}
+
+.img {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
