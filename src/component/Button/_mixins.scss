@@ -1,0 +1,19 @@
+@mixin flex-basic {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+@mixin padding($left, $right) {
+  padding-left: $left;
+  padding-right: $right;
+}
+
+@mixin btn-basic {
+  @include padding(0.4rem, 1.6rem);
+  @include flex-basic;
+  background: map-get($color, "blue");
+  border-radius: $border-radius;
+  border-color: map-get($color, "green");
+  gap: $flex-gap;
+}

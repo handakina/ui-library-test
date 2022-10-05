@@ -2,13 +2,13 @@ import React from "react";
 import ButtonConstants from "./ButtonConstants";
 import ButtonType from "./Type";
 import "./style.css";
+import icon from "../../assets/images/icon.jpg";
 
-const Button: React.FC<ButtonType> = ({
-  color = "blue",
-  label = "button",
+const IconButton: React.FC<IconButtonType> = ({
+  label = "location",
   clickHandler,
 }) => {
-  const buttonClass = `twk-button twk-button-color-${color}`;
+  const buttonClass = `twk-button-2`;
   return (
     <button
       className={buttonClass}
@@ -18,8 +18,9 @@ const Button: React.FC<ButtonType> = ({
       data-testid={ButtonConstants.ButtonTestId.toString()}
     >
       <span className="twk-text">{label}</span>
+      <img className="img" src={icon} alt="icon" height={32} width={32} />
     </button>
   );
 };
 
-export default Button;
+export default IconButton;
